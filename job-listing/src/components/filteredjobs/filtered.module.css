@@ -1,0 +1,139 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flexJustify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.logo {
+    flex-basis: 70px;
+}
+
+.stack {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.stack h4 {
+    color: hsl(180, 14%, 20%);
+    font-weight: 700;
+}
+
+.lang {
+    flex-grow: 1;
+}
+
+.listOne {
+    gap: 10px;
+}
+
+.listOne li {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.company {
+    color: hsl(180, 29%, 50%);
+}
+
+.listOne li:not(.company) {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+    padding: 4px 10px 2px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.jobInfo {
+    color: hsl(180, 8%, 52%);
+    gap: 20px;
+}
+
+.jobInfo li:not(.date) {
+    list-style-type: disc;
+}
+
+.jobsList {
+    flex-wrap: wrap;
+    background-color: hsl(180, 52%, 96%);
+    box-shadow: 0px 7px 30px -3px hsl(180, 28%, 76%);
+    padding: 1rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.available {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    background-color: hsl(180, 47%, 86%);
+    padding: 4px 10px 2px 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.availableJobs {
+    gap: 1rem;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+@media (width < 1014px) {
+    .jobsList {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+}
+
+@media (width < 600px) {
+    .availableJobs {
+        justify-content: start;
+    }
+
+    .jobsList {
+        padding-top: 50px;
+        gap: 1.5rem;
+        position: relative;
+        /* box-shadow: 0px 5px 5px -3px hsl(180, 29%, 50%); */
+        /* border: 2px solid red; */
+        box-shadow: 0px 5px 30px -3px hsl(180, 29%, 50%);
+    }
+
+    .jobs {
+        gap: 3rem;
+        margin-top: 6rem;
+    }
+
+    .logo {
+        flex-basis: 50px;
+        position: absolute;
+        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        -o-transform: translateY(-80px);
+}
+}
+

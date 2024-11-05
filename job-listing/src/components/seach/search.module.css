@@ -1,0 +1,95 @@
+.inputSearch {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.searchBtn {
+    width: 20%;
+    padding: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: none;
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 52%, 96%);
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    cursor: pointer;
+}
+
+.searchBtn:hover {
+    background-color: hsl(180, 8%, 52%);
+}
+
+.searchQuery {
+    margin-block: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(180, 52%, 96%);
+    padding: 17px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0px 10px 15px -3px hsl(180, 28%, 76%);
+    
+    & ul{
+        display: flex;
+        gap:  1rem;
+    }
+}
+
+.searchLi {
+    background-color: hsl(180, 31%, 90%);
+    color: hsl(180, 29%, 50%);
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+    & img {
+        background-color: hsl(180, 8%, 52%);
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        -ms-border-radius: 0 3px 3px 0;
+        -o-border-radius: 0 3px 3px 0;
+}
+
+    & img:hover {
+        background-color: hsl(180, 14%, 20%);
+        padding: 5px;
+    } 
+}
+
+.clearBtn {
+    color: hsl(180, 29%, 50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.clearBtn:hover {
+    color: hsl(180, 8%, 52%);
+}

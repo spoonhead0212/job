@@ -1,0 +1,9 @@
+.content {
+    width: clamp(330px, 70vw, 900px);
+    margin-inline: auto;
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+}
